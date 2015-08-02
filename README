@@ -1,7 +1,7 @@
 
                     [✝]| bible |[✝]
             -- the crowd-sourced edition --
-           demo at http://bible.breadtech.com
+           demo at http://bible.breadtech.com/api/v1
 
   - Background
   
@@ -11,7 +11,7 @@
   - Introduction
   
     As of now, bible is implemented as a standalone api server.
-    You can check out a demo at http://bible.breadtech.com.
+    You can check out a demo at http://bible.breadtech.com/api/v1
     
   - Getting Started
 
@@ -19,9 +19,9 @@
     http://bible.breadtech.com/api/v1/lang
     http://bible.breadtech.com/api/v1/version
     http://bible.breadtech.com/api/v1/book
-    http://bible.breadtech.com/api/v1/niv/matt/1
-    http://bible.breadtech.com/api/v1/niv/matt/1/1
-    http://bible.breadtech.com/api/v1/niv/matt/1/1/5
+    http://bible.breadtech.com/api/v1/NIV/Matt/1
+    http://bible.breadtech.com/api/v1/NIV/Matt/1/1
+    http://bible.breadtech.com/api/v1/NIV/Matt/1/1/5
 
     Once you've visited these pages, you should have a good
     idea of what is going on here.
@@ -48,6 +48,7 @@
       - 'lang': abbreviation of language used (en)
       * 'abbr': abbreviation (Matt)
       - 'name': full name (Matthew)
+      - 'numch': number of chapters in the book
 
     Perhaps more interesting is the definition of a verse within the Bible
 
@@ -55,10 +56,17 @@
       - 'number': index
       - 'text': contents
       
-      To specify the chapter, you want to provide the data to the path that represents the chapter
+      To specify the chapter, provide the data to the path that represents the chapter
       /<version.abbr>/<book.abbr>/<chapter.number> (/NIV/Matt/1)
       
   - Further Work
 
     This is really just the beginning. I wish to develop a client-side piece 
-    to this app for a better user-interface. Right now, it's only a programmer-interface.
+    to this app for a better user-interface. 
+    Right now, it's only a programmer-interface.
+
+  - Disclaimer
+
+    This app itself is called bible due to its abstract nature in representing
+    any form of written work. The Holy Bible is one example of how bible can be used.
+    
