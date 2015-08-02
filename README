@@ -1,0 +1,64 @@
+
+                    [✝]| bible |[✝]
+            -- the crowd-sourced edition --
+           demo at http://bible.breadtech.com
+
+  - Background
+  
+    I was wondering what it would be like to have an api
+    for the Holy Bible. Enter, bible.
+
+  - Introduction
+  
+    As of now, bible is implemented as a standalone api server.
+    You can check out a demo at http://bible.breadtech.com.
+    
+  - Getting Started
+
+    Try to visit these links:
+    http://bible.breadtech.com/api/v1/lang
+    http://bible.breadtech.com/api/v1/version
+    http://bible.breadtech.com/api/v1/book
+    http://bible.breadtech.com/api/v1/niv/matt/1
+    http://bible.breadtech.com/api/v1/niv/matt/1/1
+    http://bible.breadtech.com/api/v1/niv/matt/1/1/5
+
+    Once you've visited these pages, you should have a good
+    idea of what is going on here.
+
+  - For Developers
+
+    You can perform all the HTTP methods (GET,POST,PUT,DELETE)
+    at these locations (Except for the last one as batch modifying
+    is not yet supported). Perhaps I should generate some more
+    comphrensive documentation on the links, but here are the basics...
+
+    Astericks (*) denote the key used to uniquely identify an entity
+
+    /lang: a means of communication
+      * 'abbr': abbreviation (en)
+      - 'name': full name (English)
+
+    /version: an instance of translation
+      - 'lang': abbreviation of language used (en)
+      * 'abbr': abbreviation (NIV)
+      - 'name': full name (New Internation Version)
+
+    /book: a collection of chapters
+      - 'lang': abbreviation of language used (en)
+      * 'abbr': abbreviation (Matt)
+      - 'name': full name (Matthew)
+
+    Perhaps more interesting is the definition of a verse within the Bible
+
+    Verse: an indexed passage in the chapter of a book
+      - 'number': index
+      - 'text': contents
+      
+      To specify the chapter, you want to provide the data to the path that represents the chapter
+      /<version.abbr>/<book.abbr>/<chapter.number> (/NIV/Matt/1)
+      
+  - Further Work
+
+    This is really just the beginning. I wish to develop a client-side piece 
+    to this app for a better user-interface. Right now, it's only a programmer-interface.
