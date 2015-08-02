@@ -10,9 +10,27 @@
 
   - Introduction
   
+    bible is an application that can store the contents of any
+    written content. In this case, we are using the Holy Bible
+    to record its contents. Interestingly, if this software 
+    is used for any other collection of literature, we could 
+    run into some serious intellectual property issues. 
+
     As of now, bible is implemented as a standalone api server.
     You can check out a demo at http://bible.breadtech.com/api/v1
-    
+
+    Hopefully in the next few weeks, I'll get a client-side up
+    and running so that all computers can use this app easily,
+    but for now, it would be best if you had a basic understanding
+    of the Hyper-Text Transfer Protocol (HTTP).
+
+    Here are some resources on HTTP if you are interested:
+    Simple wiki: https://simple.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+    Full wiki: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+    Tutorial: http://www.restapitutorial.com/lessons/httpmethods.html
+    Official Standard: http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html
+    TODO: create my own guided explanation on http 
+
   - Getting Started
 
     Try to visit these links:
@@ -68,5 +86,7 @@
   - Disclaimer
 
     This app itself is called bible due to its abstract nature in representing
-    any form of written work. The Holy Bible is one example of how bible can be used.
+    any form of written work. In no way do I intend to demonstrate any level 
+    of disrepect to the Holy Bible through the undercased title of this software. 
+    It is simply my convention for naming apps.
     
