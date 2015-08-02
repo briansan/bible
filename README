@@ -20,7 +20,7 @@
     You can check out a demo at http://bible.breadtech.com/api/v1
 
     Hopefully in the next few weeks, I'll get a client-side up
-    and running so that all computers can use this app easily,
+    and running so that all people can use this app easily,
     but for now, it would be best if you had a basic understanding
     of the Hyper-Text Transfer Protocol (HTTP).
 
@@ -74,7 +74,7 @@
       - 'number': index
       - 'text': contents
       
-      To specify the chapter, provide the data to the path that represents the chapter
+      Provide the data to the path representing the chapter
       /<version.abbr>/<book.abbr>/<chapter.number> (/NIV/Matt/1)
       
   - Further Work
@@ -85,8 +85,8 @@
 
   - Disclaimer
 
-    This app itself is called bible due to its abstract nature in representing
-    any form of written work. In no way do I intend to demonstrate any level 
-    of disrepect to the Holy Bible through the undercased title of this software. 
-    It is simply my convention for naming apps.
-    
+    This app itself is called bible due to its abstract nature in 
+    representing any form of written work. In no way do I intend 
+    to demonstrate any level of disrepect to the Holy Bible through 
+    the undercased title of this software.  
+    It is simply my convention for naming apps.  
